@@ -23,7 +23,7 @@ function getDay(date, lang) {
       6: 'Суббота',
     },
   };
-  return dayNames.lang[date.getDay()]
+  return dayNames.lang
 }
 
 // Принимает объект даты, и должно вернуть компоненты даты в виде строки.
