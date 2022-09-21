@@ -23,8 +23,8 @@ function getDay(date, lang) {
       6: 'Суббота',
     },
   };
-  let date = new Date
-  return getWeekDay(date.lang)
+  let date = new Date(year, month, day)
+  return dayNames.lang[date.getDay()]
 }
 
 // Принимает объект даты, и должно вернуть компоненты даты в виде строки.
