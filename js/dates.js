@@ -36,7 +36,6 @@ let date = new Date (year, month, day)
 // Вид должен быть такой 12:02(часы и минуты), то есть если у вас одно число на одном из
 // компонентов, то добавляем 0 перед ним
 function formatTime(date) {
-  let date = new Date
   return `${date.getHours()}:${date.getMinutes() < 10 ? '0' : ''}${date.getMinutes()}`
 }
 
