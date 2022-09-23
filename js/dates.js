@@ -3,7 +3,6 @@
 // и функция должна вернуть день недели словом в зависимости от языка. Очень круто,
 // если выйдет сделать это ОДНОЙ строкой.
 function getDay(date, lang) {
-  let date = new Date (year, month, day)
   const dayNames = {
     en: {
       0: 'Sunday',
@@ -24,12 +23,13 @@ function getDay(date, lang) {
       6: 'Суббота',
     },
   };
-  if(lang === en){
-    return dayNames.en[date.getDay()]
-  } else {
-    return dayNames.ru[date.getDay()]
-  }
 } 
+let date = new Date (year, month, day)
+if(lang === en){
+  return dayNames.en[date.getDay()]
+} else {
+  return dayNames.ru[date.getDay()]
+}
 
 // Принимает объект даты, и должно вернуть компоненты даты в виде строки.
 // Вид должен быть такой 12:02(часы и минуты), то есть если у вас одно число на одном из
