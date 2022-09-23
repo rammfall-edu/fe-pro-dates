@@ -23,7 +23,7 @@ function getDay(date, lang) {
       6: 'Суббота',
     },
   };
-  if(lang === dayNames.en){
+  if(lang === 'en'){
     return dayNames.en[date.getDay()]
   } else {
     return dayNames.ru[date.getDay()]
