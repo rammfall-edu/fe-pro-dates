@@ -29,7 +29,7 @@ function getDay(date, lang) {
     return dayNames.ru[date.getDay()]
   }
 } 
-let date = new Date ()
+
 
 
 // Принимает объект даты, и должно вернуть компоненты даты в виде строки.
